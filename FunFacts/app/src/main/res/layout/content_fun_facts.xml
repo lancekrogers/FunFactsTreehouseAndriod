@@ -10,14 +10,15 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.lancekrogers.funfacts.FunFactsActivity"
-    android:background="#2de5fd">
+    android:background="#51b46d">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Did you know?!"
         android:id="@+id/textView"
-        android:textSize="30sp" />
+        android:textSize="30sp"
+        android:textColor="#80ffffff" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,7 +29,9 @@
         android:layout_marginTop="189dp"
         android:layout_below="@+id/textView"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:clickable="false"
+        android:textColor="@android:color/white" />
 
     <Button
         android:layout_width="match_parent"
@@ -38,7 +41,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_gravity="center"
-        android:background="#0cfe49" />
+        android:background="@android:color/white" />
 
 
 </RelativeLayout>
