@@ -26,12 +26,11 @@
         android:text="It will be cold in the morning"
         android:id="@+id/fact"
         android:textSize="24sp"
-        android:layout_marginTop="189dp"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
         android:clickable="false"
-        android:textColor="@android:color/white" />
+        android:textColor="@android:color/white"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="match_parent"
