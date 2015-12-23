@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -39,6 +40,8 @@ public class FunFactsActivity extends AppCompatActivity {
             }
         };
         showFactButton.setOnClickListener(listener);
+        String message = "Oohra our activity was created!";
+        Toast.makeText(this, message, Toast.LENGTH_LONG).show();
     }
 }
 
