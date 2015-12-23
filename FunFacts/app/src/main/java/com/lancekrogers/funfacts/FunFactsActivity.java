@@ -13,6 +13,7 @@ public class FunFactsActivity extends AppCompatActivity {
 
     private FactBook mFactBook = new FactBook();
     private Random randomNum = new Random();
+    private ColorWheel mColorWheel = new ColorWheel();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,9 +29,11 @@ public class FunFactsActivity extends AppCompatActivity {
         View.OnClickListener listener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                relativeLayout.setBackgroundColor(randomNum.nextInt() + 1);
+
                 String fact = mFactBook.getFact();
                 factLabel.setText(fact);
+                int color = mColorWheel.getColor();
+                relativeLayout.setBackgroundColor(color);
 
             }
         };
